@@ -1,1 +1,31 @@
-# 24MCA059
+TITLE: SHORTEN_URL
+
+
+MODULES:
+
+logging_middleware
+app.py
+models.py
+utils.py
+POSTMAN  ::
+
+ "clientID": "4db27e6f-c2c3-48c0-b4c1-866994c26ee3",
+ "clientSecret": "ZNvAMZBDDDwPQuAg"
+
+LOGIN USING POSTMAN ::
+
+"logID": "5ceb4efa-ef43-4aa3-a016-a7b3b16d9c6d",
+ "message": "log created successfully"
+
+REDIRECT LINK:
+
+GET::    http://localhost:5000/mylink 
+
+POST::   http://localhost:5000/shorturls 
+which displays the api created ,
+{
+
+   "url": "https://sample.com",
+  "validity": 10,
+  "shortcode": "mylink"
+}
